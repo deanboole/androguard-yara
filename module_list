@@ -1,0 +1,17 @@
+MODULE(tests)
+MODULE(pe)
+MODULE(elf)
+MODULE(math)
+
+#ifdef CUCKOO
+MODULE(cuckoo)
+MODULE(androguard)
+#endif
+
+#ifdef MAGIC
+MODULE(magic)
+#endif
+
+#ifdef HASH
+MODULE(hash)
+#endif
